@@ -1,0 +1,14 @@
+CRITICAL - 2025-05-13 08:16:34 --> CodeIgniter\Exceptions\ModelException: "App\Models\ViewJadwalSidangModel" model class does not specify a Primary Key.
+[Method: GET, Route: viewjadwal]
+in SYSTEMPATH\Model.php on line 704.
+ 1 SYSTEMPATH\Model.php(704): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\ViewJadwalSidangModel')
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ViewJadwalSidangController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ViewJadwalSidangController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewJadwalSidangController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
