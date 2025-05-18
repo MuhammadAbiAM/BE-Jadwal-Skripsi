@@ -54,14 +54,14 @@ class JadwalSidangController extends ResourceController
     {
         $rules = $this->validate([
             'npm' => [
-                'rules' => 'required||is_unique[jadwal_sidang.npm]',
+                'rules' => 'required|is_unique[jadwal_sidang.npm]',
                 'errors' => [
                     'required'  => 'NPM wajib diisi.',
                     'is_unique' => 'Mahasiswa dengan NPM tersebut sudah terdaftar.',
                 ]
             ],
             'kode_ruangan' => [
-                'rules' => 'required]',
+                'rules' => 'required',
                 'errors' => [
                     'required'  => 'Kode ruangan wajib diisi.'
                 ]
@@ -69,7 +69,7 @@ class JadwalSidangController extends ResourceController
             'waktu_sidang' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Waktu sidang wajib diisi.'
+                    'required' => 'Waktu sidang wajib diisi.',
                 ]
             ],
         ]);
@@ -79,6 +79,20 @@ class JadwalSidangController extends ResourceController
                 'message' => $this->validator->getErrors(),
             ];
             return $this->failValidationErrors($response);
+        }
+
+        $kode_ruangan = $this->request->getPost('kode_ruangan');
+        $waktu_sidang = $this->request->getPost('waktu_sidang');
+
+        $model = new \App\Models\JadwalSidangModel();
+        $exists = $model->where('kode_ruangan', $kode_ruangan)
+            ->where('waktu_sidang', $waktu_sidang)
+            ->first();
+
+        if ($exists) {
+            return redirect()->back()->withInput()->with('errors', [
+                'kombinasi' => 'Kode ruangan dan waktu sidang sudah terpakai.'
+            ]);
         }
 
         $this->model->insert([
@@ -150,6 +164,20 @@ class JadwalSidangController extends ResourceController
             return $this->failValidationErrors($response);
         }
 
+        $kode_ruangan = $this->request->getPost('kode_ruangan');
+        $waktu_sidang = $this->request->getPost('waktu_sidang');
+
+        $model = new \App\Models\JadwalSidangModel();
+        $exists = $model->where('kode_ruangan', $kode_ruangan)
+            ->where('waktu_sidang', $waktu_sidang)
+            ->first();
+
+        if ($exists) {
+            return redirect()->back()->withInput()->with('errors', [
+                'kombinasi' => 'Kode ruangan dan waktu sidang sudah terpakai.'
+            ]);
+        }
+
         $this->model->update($id_jadwal, [
             'npm'           => esc($this->request->getVar('npm')),
             'kode_ruangan'  => esc($this->request->getVar('kode_ruangan')),
@@ -171,6 +199,12 @@ class JadwalSidangController extends ResourceController
      */
     public function delete($id_jadwal = null)
     {
+        $jadwal = $this->model->find($id_jadwal);
+
+        if (!$jadwal) {
+            return $this->failNotFound('Data Jadwal Sidang tidak ditemukan.');
+        }
+
         $this->model->delete($id_jadwal);
         $response = [
             'message' => 'Data Jadwal Sidang Berhasil Dihapus.',

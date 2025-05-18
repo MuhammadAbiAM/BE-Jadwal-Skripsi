@@ -126,6 +126,12 @@ class DosenController extends ResourceController
      */
     public function update($nidn = null)
     {
+        $dosen = $this->model->find($nidn);
+
+        if (!$dosen) {
+            return $this->failNotFound('Data dosen tidak ditemukan.');
+        }
+
         $rules = $this->validate([
             'nama_dosen' => [
                 'rules' => 'required|min_length[3]',
@@ -178,6 +184,12 @@ class DosenController extends ResourceController
      */
     public function delete($nidn = null)
     {
+        $dosen = $this->model->find($nidn);
+
+        if (!$dosen) {
+            return $this->failNotFound('Data dosen tidak ditemukan.');
+        }
+
         $this->model->delete($nidn);
         $response = [
             'message' => 'Data Dosen Berhasil Dihapus',

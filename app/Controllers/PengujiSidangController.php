@@ -80,6 +80,43 @@ class PengujiSidangController extends ResourceController
             return $this->failValidationErrors($response);
         }
 
+        $id_jadwal = $this->request->getVar('id_jadwal');
+        $nidn = $this->request->getVar('nidn');
+        $peran = $this->request->getVar('peran');
+
+        // 1. Cek apakah kombinasi id_jadwal dan nidn sudah ada (dosen sudah terdaftar di jadwal ini)
+        $alreadyExists = $this->model
+            ->where('id_jadwal', $id_jadwal)
+            ->where('nidn', $nidn)
+            ->first();
+
+        if ($alreadyExists) {
+            return $this->failValidationErrors([
+                'nidn' => 'Dosen ini sudah terdaftar pada jadwal sidang yang sama.'
+            ]);
+        }
+
+        // 2. Cek jumlah penguji untuk id_jadwal ini
+        $pengujiCount = $this->model->where('id_jadwal', $id_jadwal)->countAllResults();
+        if ($pengujiCount >= 2) {
+            return $this->failValidationErrors([
+                'id_jadwal' => 'Maksimal 2 dosen penguji untuk satu jadwal sidang.'
+            ]);
+        }
+
+        // 3. Cek apakah ada peran yang sama digunakan dosen lain pada id_jadwal ini
+        $existingSamePeran = $this->model
+            ->where('id_jadwal', $id_jadwal)
+            ->where('peran', $peran)
+            ->where('nidn !=', $nidn)
+            ->first();
+
+        if ($existingSamePeran) {
+            return $this->failValidationErrors([
+                'peran' => 'Peran ini sudah digunakan oleh dosen lain pada jadwal sidang yang sama.'
+            ]);
+        }
+
         $this->model->insert([
             'id_jadwal' => esc($this->request->getVar('id_jadwal')),
             'nidn'  => esc($this->request->getVar('nidn')),
@@ -113,9 +150,9 @@ class PengujiSidangController extends ResourceController
      */
     public function update($id_penguji = null)
     {
-        $id_penguji = $this->model->find($id_penguji);
+        $penguji = $this->model->find($id_penguji);
 
-        if (!$id_penguji) {
+        if (!$penguji) {
             return $this->failNotFound('Data Penguji Sidang tidak ditemukan.');
         }
 
@@ -145,6 +182,43 @@ class PengujiSidangController extends ResourceController
                 'message' => $this->validator->getErrors(),
             ];
             return $this->failValidationErrors($response);
+        }
+
+        $id_jadwal = $this->request->getVar('id_jadwal');
+        $nidn = $this->request->getVar('nidn');
+        $peran = $this->request->getVar('peran');
+
+        // 1. Cek apakah kombinasi id_jadwal dan nidn sudah ada (dosen sudah terdaftar di jadwal ini)
+        $alreadyExists = $this->model
+            ->where('id_jadwal', $id_jadwal)
+            ->where('nidn', $nidn)
+            ->first();
+
+        if ($alreadyExists) {
+            return $this->failValidationErrors([
+                'nidn' => 'Dosen ini sudah terdaftar pada jadwal sidang yang sama.'
+            ]);
+        }
+
+        // 2. Cek jumlah penguji untuk id_jadwal ini
+        $pengujiCount = $this->model->where('id_jadwal', $id_jadwal)->countAllResults();
+        if ($pengujiCount >= 2) {
+            return $this->failValidationErrors([
+                'id_jadwal' => 'Maksimal 2 dosen penguji untuk satu jadwal sidang.'
+            ]);
+        }
+
+        // 3. Cek apakah ada peran yang sama digunakan dosen lain pada id_jadwal ini
+        $existingSamePeran = $this->model
+            ->where('id_jadwal', $id_jadwal)
+            ->where('peran', $peran)
+            ->where('nidn !=', $nidn)
+            ->first();
+
+        if ($existingSamePeran) {
+            return $this->failValidationErrors([
+                'peran' => 'Peran ini sudah digunakan oleh dosen lain pada jadwal sidang yang sama.'
+            ]);
         }
 
         $this->model->update($id_penguji, [

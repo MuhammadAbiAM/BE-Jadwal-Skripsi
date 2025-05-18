@@ -201,6 +201,12 @@ class MahasiswaController extends ResourceController
      */
     public function delete($npm = null)
     {
+        $mahasiswa = $this->model->find($npm);
+
+        if (!$mahasiswa) {
+            return $this->failNotFound('Data Mahasiswa tidak ditemukan.');
+        }
+        
         $this->model->delete($npm);
         $response = [
             'message' => 'Data Mahasiswa Berhasil Dihapus',

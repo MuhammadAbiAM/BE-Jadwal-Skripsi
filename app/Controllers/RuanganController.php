@@ -161,6 +161,12 @@ class RuanganController extends ResourceController
      */
     public function delete($kode_ruangan = null)
     {
+        $ruangan = $this->model->find($kode_ruangan);
+
+        if (!$ruangan) {
+            return $this->failNotFound('Data Ruangan tidak ditemukan.');
+        }
+
         $this->model->delete($kode_ruangan);
         $response = [
             'message' => 'Data Ruangan Berhasil Dihapus.',
