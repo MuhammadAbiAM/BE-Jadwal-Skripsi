@@ -30,9 +30,19 @@ class RuanganController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function show($id = null)
+    public function show($kode_ruangan = null)
     {
-        //
+        $ruangan = $this->model->find($kode_ruangan);
+
+        if (!$ruangan) {
+            return $this->failNotFound('Data Ruangan tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $ruangan,
+        ];
+        return $this->respond($response, 200);
     }
 
     /**
@@ -46,18 +56,16 @@ class RuanganController extends ResourceController
             'kode_ruangan' => [
                 'rules' => 'required|alpha_numeric_punct|min_length[3]|is_unique[ruangan.kode_ruangan]',
                 'errors' => [
-                    'required'    => 'Kode ruangan wajib diisi.',
-                    'alpha_numeric_punct' => 'Kode hanya boleh huruf, angka, spasi, dan tanda baca.',
-                    'min_length'  => 'Kode minimal 3 karakter.',
-                    'is_unique'   => 'Kode sudah terdaftar.',
+                    'required'              => 'Kode ruangan wajib diisi.',
+                    'alpha_numeric_punct'   => 'Kode ruangan hanya boleh huruf, angka, spasi, dan tanda baca.',
+                    'min_length'            => 'Kode ruangan minimal 3 karakter.',
+                    'is_unique'             => 'Kode ruangan sudah terdaftar.',
                 ]
             ],
             'nama_ruangan' => [
-                'rules' => 'required|alpha_space|min_length[3]',
+                'rules' => 'required',
                 'errors' => [
                     'required'    => 'Nama ruangan wajib diisi.',
-                    'alpha_space' => 'Nama hanya boleh huruf dan spasi.',
-                    'min_length'  => 'Nama minimal 3 karakter.',
                 ]
             ],
         ]);
@@ -87,7 +95,7 @@ class RuanganController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function edit($id = null)
+    public function edit($kode_ruangan = null)
     {
         //
     }
@@ -99,9 +107,49 @@ class RuanganController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function update($id = null)
+    public function update($kode_ruangan = null)
     {
-        //
+        $ruangan = $this->model->find($kode_ruangan);
+
+        if (!$ruangan) {
+            return $this->failNotFound('Data Ruangan tidak ditemukan.');
+        }
+
+        $rules = $this->validate([
+            'kode_ruangan' => [
+                'rules' => 'required|alpha_numeric_punct|min_length[3]|is_unique[ruangan.kode_ruangan,kode_ruangan,' . $kode_ruangan . ']',
+                'errors' => [
+                    'required'              => 'Kode ruangan wajib diisi.',
+                    'alpha_numeric_punct'   => 'Kode ruangan hanya boleh huruf, angka, spasi, dan tanda baca.',
+                    'min_length'            => 'Kode ruangan minimal 3 karakter.',
+                    'is_unique'             => 'Kode ruangan sudah terdaftar.',
+                ]
+            ],
+            'nama_ruangan' => [
+                'rules' => 'required|alpha_space|min_length[3]',
+                'errors' => [
+                    'required'    => 'Nama ruangan wajib diisi.',
+                    'alpha_space' => 'Nama ruangan hanya boleh huruf dan spasi.',
+                    'min_length'  => 'Nama ruangan minimal 3 karakter.',
+                ]
+            ],
+        ]);
+
+        if (!$rules) {
+            $response = [
+                'message' => $this->validator->getErrors(),
+            ];
+            return $this->failValidationErrors($response);
+        }
+
+        $this->model->update($kode_ruangan, [
+            'nama_ruangan' => esc($this->request->getVar('nama_ruangan'))
+        ]);
+
+        $response = [
+            'message' => 'Data Ruangan Berhasil Diubah.',
+        ];
+        return $this->respondUpdated($response);
     }
 
     /**

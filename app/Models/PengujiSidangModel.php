@@ -9,6 +9,8 @@ class PengujiSidangModel extends Model
     protected $table = 'penguji_sidang';
     protected $primaryKey = 'id_penguji';
     protected $allowedFields = [ 
+        'id_jadwal',
+        'nidn',
         'peran'
     ];
 }

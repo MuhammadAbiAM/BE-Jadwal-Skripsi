@@ -32,7 +32,17 @@ class DosenController extends ResourceController
      */
     public function show($id = null)
     {
-        //
+        $dosen = $this->model->find($id);
+
+        if (!$dosen) {
+            return $this->failNotFound('Data Dosen tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $dosen,
+        ];
+        return $this->respond($response, 200);
     }
 
     /**
@@ -44,27 +54,25 @@ class DosenController extends ResourceController
     {
         $rules = $this->validate([
             'nidn' => [
-                'rules' => 'required|numeric|min_length[8]|is_unique[dosen.nidn]',
+                'rules' => 'required|numeric|min_length[10]|is_unique[dosen.nidn]',
                 'errors' => [
                     'required'    => 'NIDN wajib diisi.',
                     'numeric'     => 'NIDN harus berupa angka.',
-                    'min_length'  => 'NIDN minimal 8 karakter.',
+                    'min_length'  => 'NIDN minimal 10 karakter.',
                     'is_unique'   => 'NIDN sudah terdaftar.',
                 ]
             ],
             'nama_dosen' => [
-                'rules' => 'required|alpha_space|min_length[3]',
+                'rules' => 'required|alpha_space',
                 'errors' => [
                     'required'    => 'Nama dosen wajib diisi.',
                     'alpha_space' => 'Nama hanya boleh huruf dan spasi.',
-                    'min_length'  => 'Nama minimal 3 karakter.',
                 ]
             ],
             'program_studi' => [
-                'rules' => 'required|alpha_space|min_length[3]',
+                'rules' => 'required',
                 'errors' => [
                     'required'    => 'Program studi wajib diisi.',
-                    'min_length'  => 'Program studi minimal 3 karakter.',
                 ]
             ],
             'email' => [

@@ -34,4 +34,28 @@ class UserController extends ResourceController
     {
         //
     }
+
+    public function login()
+    {
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+
+        $user = $this->model->where('username', $username)->first();
+
+        if (!$user || !password_verify($password, $user['password'])) {
+            return $this->failUnauthorized('Username atau password salah.');
+        }
+
+        $token = generateJWT($user);
+
+        return $this->respond([
+            'message' => 'Login berhasil',
+            'token' => $token,
+            'user' => [
+                'id' => $user['id_user'],
+                'username' => $user['username'],
+                'role' => $user['role'],
+            ]
+        ]);
+    }
 }

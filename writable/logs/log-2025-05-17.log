@@ -1,0 +1,546 @@
+CRITICAL - 2025-05-17 10:44:50 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-05-17 10:44:50 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\Jadwal-Skripsi\system\Debug\ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\Jadwal-Skripsi\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\laragon\www\Jadwal-Skripsi\spark(84): CodeIgniter\Boot::bootSpark()
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 10:46:07 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-05-17 10:46:07 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\Jadwal-Skripsi\system\Debug\ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\Jadwal-Skripsi\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\laragon\www\Jadwal-Skripsi\spark(84): CodeIgniter\Boot::bootSpark()
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 10:49:49 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2025-05-17 10:49:49 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\laragon\www\Jadwal-Skripsi\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\Jadwal-Skripsi\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\Jadwal-Skripsi\system\Debug\ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\Jadwal-Skripsi\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 C:\laragon\www\Jadwal-Skripsi\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\laragon\www\Jadwal-Skripsi\spark(84): CodeIgniter\Boot::bootSpark()
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-17 10:56:23 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:56:31 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:56:34 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:57:36 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:57:37 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:57:39 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:58:34 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 10:58:39 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:02:40 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:02:43 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:02:46 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:02:47 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:02:50 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:03:39 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:04:02 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:18:13 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:18:27 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: dosen]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:19:30 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:19:42 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:19:47 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: dosen]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:19:52 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: jadwal]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:19:55 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:43:36 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:46:53 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: mahasiswa]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:52:07 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: view_penguji_sidang]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')
+CRITICAL - 2025-05-17 11:52:35 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: view_jadwal_sidang]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance()
+ 6 SYSTEMPATH\Common.php(804): CodeIgniter\Config\Factories::__callStatic()
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model()
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel()
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\Jadwal-Skripsi\\public\\index.php')

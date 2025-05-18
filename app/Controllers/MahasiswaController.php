@@ -30,9 +30,19 @@ class MahasiswaController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function show($id = null)
+    public function show($npm = null)
     {
-        //
+        $mahasiswa = $this->model->find($npm);
+
+        if (!$mahasiswa) {
+            return $this->failNotFound('Data Mahasiswa tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $mahasiswa,
+        ];
+        return $this->respond($response, 200);
     }
 
     /**
@@ -53,25 +63,22 @@ class MahasiswaController extends ResourceController
                 ]
             ],
             'nama_mahasiswa' => [
-                'rules' => 'required|alpha_space|min_length[3]',
+                'rules' => 'required|alpha_space',
                 'errors' => [
                     'required'    => 'Nama mahasiswa wajib diisi.',
                     'alpha_space' => 'Nama hanya boleh huruf dan spasi.',
-                    'min_length'  => 'Nama minimal 3 karakter.',
                 ]
             ],
             'program_studi' => [
-                'rules' => 'required|min_length[3]',
+                'rules' => 'required',
                 'errors' => [
                     'required'   => 'Program studi wajib diisi.',
-                    'min_length' => 'Program studi minimal 3 karakter.',
                 ]
             ],
             'judul_skripsi' => [
-                'rules' => 'required|min_length[10]',
+                'rules' => 'required',
                 'errors' => [
                     'required'   => 'Judul skripsi wajib diisi.',
-                    'min_length' => 'Judul skripsi minimal 10 karakter.',
                 ]
             ],
             'email' => [
@@ -112,7 +119,7 @@ class MahasiswaController extends ResourceController
      *
      * @return ResponseInterface
      */
-    public function edit($id = null)
+    public function edit($npm = null)
     {
         //
     }
@@ -126,6 +133,12 @@ class MahasiswaController extends ResourceController
      */
     public function update($npm = null)
     {
+        $mahasiswa = $this->model->find($npm);
+
+        if (!$mahasiswa) {
+            return $this->failNotFound('Data Mahasiswa tidak ditemukan.');
+        }
+
         $rules = $this->validate([
             'nama_mahasiswa' => [
                 'rules' => 'required|alpha_space|min_length[3]',
@@ -173,6 +186,7 @@ class MahasiswaController extends ResourceController
         ]);
 
         $response = [
+            'status'  => true,
             'message' => 'Data Mahasiswa Berhasil Diubah',
         ];
         return $this->respond($response, 200);
