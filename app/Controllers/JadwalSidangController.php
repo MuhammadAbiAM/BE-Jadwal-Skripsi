@@ -57,7 +57,7 @@ class JadwalSidangController extends ResourceController
                 'rules' => 'required|is_unique[jadwal_sidang.npm]',
                 'errors' => [
                     'required'  => 'NPM wajib diisi.',
-                    'is_unique' => 'Mahasiswa dengan NPM tersebut sudah terdaftar.',
+                    'is_unique' => 'Mahasiswa dengan NPM tersebut sudah terdaftar di jadwal sidang.',
                 ]
             ],
             'kode_ruangan' => [
@@ -81,16 +81,27 @@ class JadwalSidangController extends ResourceController
             return $this->failValidationErrors($response);
         }
 
-        $kode_ruangan = $this->request->getPost('kode_ruangan');
-        $waktu_sidang = $this->request->getPost('waktu_sidang');
+        $npm            = $this->request->getVar('npm');
+        $kode_ruangan   = $this->request->getVar('kode_ruangan');
+        $waktu_sidang   = $this->request->getVar('waktu_sidang');
 
+        // Validasi tambahan: cek apakah NPM ada di tabel mahasiswa
+        $mahasiswaModel = new \App\Models\MahasiswaModel();
+        $mahasiswa = $mahasiswaModel->where('npm', $npm)->first();
+        if (!$mahasiswa) {
+            return $this->failValidationErrors([
+                'npm' => 'Mahasiswa dengan NPM tersebut belum terdaftar.'
+            ]);
+        }
+
+        // Validasi kombinasi kode_ruangan dan waktu_sidang unik
         $model = new \App\Models\JadwalSidangModel();
         $exists = $model->where('kode_ruangan', $kode_ruangan)
-            ->where('waktu_sidang', $waktu_sidang)
-            ->first();
+                        ->where('waktu_sidang', $waktu_sidang)
+                        ->first();
 
         if ($exists) {
-            return redirect()->back()->withInput()->with('errors', [
+            return $this->failValidationErrors([
                 'kombinasi' => 'Kode ruangan dan waktu sidang sudah terpakai.'
             ]);
         }
