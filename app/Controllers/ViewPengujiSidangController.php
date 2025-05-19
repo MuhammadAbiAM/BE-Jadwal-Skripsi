@@ -32,6 +32,16 @@ class ViewPengujiSidangController extends ResourceController
      */
     public function show($id = null)
     {
-        //
+        $penguji = $this->model->find($id);
+
+        if (!$penguji) {
+            return $this->failNotFound('Data Penguji Sidang tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $penguji,
+        ];
+        return $this->respond($response, 200);
     }
 }

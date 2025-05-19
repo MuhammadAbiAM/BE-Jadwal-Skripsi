@@ -32,6 +32,16 @@ class ViewJadwalSidangController extends ResourceController
      */
     public function show($id = null)
     {
-        //
+        $jadwal = $this->model->find($id);
+
+        if (!$jadwal) {
+            return $this->failNotFound('Data Jadwal Sidang tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $jadwal,
+        ];
+        return $this->respond($response, 200);
     }
 }

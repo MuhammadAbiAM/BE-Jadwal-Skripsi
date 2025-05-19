@@ -32,6 +32,16 @@ class ViewPenjadwalanController extends ResourceController
      */
     public function show($id = null)
     {
-        //
+        $penjadwalan = $this->model->find($id);
+
+        if (!$penjadwalan) {
+            return $this->failNotFound('Data Penjadwalan tidak ditemukan.');
+        }
+
+        $response = [
+            'message' => 'success',
+            'data'    => $penjadwalan,
+        ];
+        return $this->respond($response, 200);
     }
 }
