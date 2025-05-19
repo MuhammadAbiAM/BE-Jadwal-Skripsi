@@ -187,6 +187,7 @@ class JadwalSidangController extends ResourceController
         $model = new \App\Models\JadwalSidangModel();
         $exists = $model->where('kode_ruangan', $kode_ruangan)
                         ->where('waktu_sidang', $waktu_sidang)
+                        ->where('id_jadwal !=', $id_jadwal)
                         ->first();
 
         if ($exists) {
