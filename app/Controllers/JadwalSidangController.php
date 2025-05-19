@@ -85,7 +85,6 @@ class JadwalSidangController extends ResourceController
         $kode_ruangan   = $this->request->getVar('kode_ruangan');
         $waktu_sidang   = $this->request->getVar('waktu_sidang');
 
-        // Validasi tambahan: cek apakah NPM ada di tabel mahasiswa
         $mahasiswaModel = new \App\Models\MahasiswaModel();
         $mahasiswa = $mahasiswaModel->where('npm', $npm)->first();
         if (!$mahasiswa) {
@@ -94,7 +93,6 @@ class JadwalSidangController extends ResourceController
             ]);
         }
 
-        // Validasi kombinasi kode_ruangan dan waktu_sidang unik
         $model = new \App\Models\JadwalSidangModel();
         $exists = $model->where('kode_ruangan', $kode_ruangan)
                         ->where('waktu_sidang', $waktu_sidang)
@@ -147,10 +145,9 @@ class JadwalSidangController extends ResourceController
 
         $rules = $this->validate([
             'npm' => [
-                'rules' => 'required|is_unique[jadwal_sidang.npm]',
+                'rules' => 'required',
                 'errors' => [
                     'required'  => 'NPM wajib diisi.',
-                    'is_unique' => 'Mahasiswa dengan NPM tersebut sudah terdaftar.',
                 ]
             ],
             'kode_ruangan' => [
