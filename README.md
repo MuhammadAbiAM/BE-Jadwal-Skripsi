@@ -57,14 +57,45 @@ Akses aplikasi di browser melalui `http://localhost:8080`.
 
 ### 5. Cek Endpoint API Menggunakan Postman
 Gunakan Postman untuk mengetes endpoint berikut:
+
 User
 - GET → http://localhost:8080/user
+- GET → http://localhost:8080/user/{id}
 
 Mahasiswa
 - GET → http://localhost:8080/mahasiswa
+- GET → http://localhost:8080/mahasiswa/{id}
 - POST → http://localhost:8080/mahasiswa
 - PUT → http://localhost:8080/mahasiswa/{id}
 - DELETE → http://localhost:8080/mahasiswa/{id}
+
+Dosen
+- GET → http://localhost:8080/dosen
+- GET → http://localhost:8080/dosen/{id}
+- POST → http://localhost:8080/dosen
+- PUT → http://localhost:8080/dosen/{id}
+- DELETE → http://localhost:8080/dosen/{id}
+
+Ruangan
+- GET → http://localhost:8080/ruangan
+- GET → http://localhost:8080/ruangan/{id}
+- POST → http://localhost:8080/ruangan
+- PUT → http://localhost:8080/ruangan/{id}
+- DELETE → http://localhost:8080/ruangan/{id}
+
+Jadwal Sidang
+- GET → http://localhost:8080/jadwal
+- GET → http://localhost:8080/jadwal/{id}
+- POST → http://localhost:8080/jadwal
+- PUT → http://localhost:8080/jadwal/{id}
+- DELETE → http://localhost:8080/jadwal/{id}
+
+Penguji Sidang
+- GET → http://localhost:8080/penguji
+- GET → http://localhost:8080/penguji/{id}
+- POST → http://localhost:8080/penguji
+- PUT → http://localhost:8080/penguji/{id}
+- DELETE → http://localhost:8080/penguji/{id}
 
 ## More Information
 Untuk dokumentasi lebih lanjut, kunjungi [CodeIgniter User Guide](https://codeigniter.com/user_guide/).
