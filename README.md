@@ -1,4 +1,4 @@
-# CodeIgniter Installation Guide
+# BackEnd CodeIgniter Sistem Penjadwalan Sidang Skripsi Otomatis
 
 ## Prerequisites
 Sebelum menginstal CodeIgniter, pastikan sistem Anda memenuhi persyaratan berikut:
