@@ -6,7 +6,7 @@ Sebelum menginstal CodeIgniter, pastikan sistem Anda memenuhi persyaratan beriku
 - **Web Server**: Apache/Nginx dengan mod_rewrite diaktifkan
 - **PHP**: Versi 7.4 atau lebih baru
 - **Database**: MySQL, PostgreSQL, SQLite, atau lainnya yang didukung
-- **Composer** (Opsional, untuk mengelola dependensi)
+- **Composer**: untuk mengelola dependensi
 
 ## Installation Steps
 
