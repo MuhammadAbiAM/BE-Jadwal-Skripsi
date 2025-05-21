@@ -24,54 +24,47 @@ cd my_project
 1. Unduh CodeIgniter dari [CodeIgniter Official Website](https://codeigniter.com/download).
 2. Ekstrak file ke dalam folder proyek Anda.
 
-### 2. Konfigurasi Dasar
-
-#### a. Atur `baseURL`
-Buka file `app/Config/App.php` dan sesuaikan bagian berikut:
+### 2. Install Depedensi
+Install semua dependensi yang dibutuhkan menggunakan Composer:
 ```php
-public $baseURL = 'http://localhost/my_project/';
+composer install
+```
+
+### 3. Konfigurasi Environment
+
+#### a. Atur env
+Salin file .env.example menjadi .env dan atur konfigurasi database:
+```php
+cp env .env
 ```
 
 #### b. Konfigurasi Database
-Jika menggunakan database, ubah pengaturan pada `app/Config/Database.php`:
+Edit file .env dan sesuaikan dengan koneksi database lokal kamu:
 ```php
-public $default = [
-    'DSN'      => '',
-    'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'nama_database',
-    'DBDriver' => 'MySQLi',
-];
+database.default.hostname = localhost
+database.default.database = nama_database_anda
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
 ```
 
-### 3. Jalankan Server
+### 4. Jalankan Server
 Gunakan PHP built-in server untuk menjalankan aplikasi:
 ```bash
 php spark serve
 ```
 Akses aplikasi di browser melalui `http://localhost:8080`.
 
-## Additional Setup
+### 5. Cek Endpoint API Menggunakan Postman
+Gunakan Postman untuk mengetes endpoint berikut:
+User
+- GET → http://localhost:8080/user
 
-### 1. Mengaktifkan `mod_rewrite` (Jika Menggunakan Apache)
-Pastikan file `.htaccess` tersedia dan konfigurasi `AllowOverride All` telah diaktifkan dalam Apache.
-
-### 2. Menggunakan Environment File
-Salin `.env.example` menjadi `.env` dan sesuaikan konfigurasi yang diperlukan:
-```bash
-cp env .env
-```
-Kemudian aktifkan mode development:
-```bash
-CI_ENVIRONMENT = development
-```
-
-## Troubleshooting
-
-- **Error: Page Not Found**: Pastikan `mod_rewrite` diaktifkan jika menggunakan Apache.
-- **Database Connection Error**: Cek kembali kredensial database pada `app/Config/Database.php`.
-- **Permission Issues**: Pastikan folder `writable/` memiliki izin yang sesuai (`chmod -R 777 writable/`).
+Mahasiswa
+- GET → http://localhost:8080/mahasiswa
+- POST → http://localhost:8080/mahasiswa
+- PUT → http://localhost:8080/mahasiswa/{id}
+- DELETE → http://localhost:8080/mahasiswa/{id}
 
 ## More Information
 Untuk dokumentasi lebih lanjut, kunjungi [CodeIgniter User Guide](https://codeigniter.com/user_guide/).
