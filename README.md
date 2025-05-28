@@ -57,7 +57,7 @@ Akses aplikasi di browser melalui `http://localhost:8080`.
 
 ### 5. Import Database
 Sebelum menjalankan backend ini, pastikan Anda sudah mengimpor struktur dan data database yang dibutuhkan. Berikut file SQL yang dapat diunduh:
-https://drive.google.com/drive/folders/1OWsZk5XWP_ujqEVabo5TzxvIne0c86qQ
+https://github.com/mayangm09/DBE-SI-Penjadwalan-Skripsi
 
 ### 6. Cek Endpoint API Menggunakan Postman
 Gunakan Postman untuk mengetes endpoint berikut:
