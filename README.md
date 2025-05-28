@@ -14,7 +14,7 @@ Sebelum menginstal CodeIgniter, pastikan sistem Anda memenuhi persyaratan beriku
 
 Anda dapat mengunduh CodeIgniter melalui beberapa cara:
 
-#### a. Menggunakan Composer (Disarankan)
+#### a. Menggunakan Composer
 ```bash
 composer create-project codeigniter4/appstarter my_project
 cd my_project
@@ -55,7 +55,11 @@ php spark serve
 ```
 Akses aplikasi di browser melalui `http://localhost:8080`.
 
-### 5. Cek Endpoint API Menggunakan Postman
+### 5. Import Database
+Sebelum menjalankan backend ini, pastikan Anda sudah mengimpor struktur dan data database yang dibutuhkan. Berikut file SQL yang dapat diunduh:
+https://drive.google.com/drive/folders/1OWsZk5XWP_ujqEVabo5TzxvIne0c86qQ
+
+### 6. Cek Endpoint API Menggunakan Postman
 Gunakan Postman untuk mengetes endpoint berikut:
 
 #### User
